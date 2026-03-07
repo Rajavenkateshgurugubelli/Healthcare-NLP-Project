@@ -1,0 +1,21 @@
+Patient File: MRN-10294
+Age: 58
+Gender: Male
+
+Chief Complaint:
+Patient presents with worsening dyspnea on exertion over the past three months, accompanied by intermittent chest tightness.
+
+Medical History:
+Type 2 Diabetes Mellitus x 10 years, managed with Metformin 1000mg BID.
+Hypertension, managed with Lisinopril 20mg daily.
+Hyperlipidemia, currently taking Atorvastatin 40mg nightly.
+
+Current Assessment:
+Patient appears comfortable at rest. Mild bilateral lower extremity edema is noted. 
+Echocardiogram reveals an ejection fraction of 40%, consistent with early heart failure (HFrEF).
+
+Plan:
+1. Initiate Carvedilol 3.125mg BID.
+2. Add Furosemide 20mg daily for fluid overload.
+3. Refer for cardiology consultation for further heart failure management.
+4. Continue current medications for diabetes and hypertension.

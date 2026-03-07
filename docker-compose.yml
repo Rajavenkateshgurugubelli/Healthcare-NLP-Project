@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  med-nlp-api:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: med_nlp_engine
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./src:/app/src
+      - ./data:/app/data
+    environment:
+      - ENVIRONMENT=development
+      - LOG_LEVEL=INFO
+    restart: unless-stopped
+    # Depending on GPU availability
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
+
+  med-nlp-frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: med_nlp_frontend
+    ports:
+      - "8501:8501"
+    environment:
+      - API_URL=http://med-nlp-api:8000
+    depends_on:
+      - med-nlp-api
+    restart: unless-stopped

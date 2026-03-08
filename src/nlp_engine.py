@@ -70,7 +70,18 @@ class NLPEngine:
         if not self.ner_pipeline:
             return [{"word": "mock_disease", "entity_group": "Disease", "score": 0.99, "start": 0, "end": 12}]
             
-        return self.ner_pipeline(text)
+        entities = self.ner_pipeline(text)
+        # Convert numpy types to native Python types for JSON serialization
+        results = []
+        for ent in entities:
+            clean_ent = {}
+            for k, v in ent.items():
+                if isinstance(v, np.generic):
+                    clean_ent[k] = v.item()
+                else:
+                    clean_ent[k] = v
+            results.append(clean_ent)
+        return results
 
     def query_rag(self, query: str, k: int = 2) -> tuple:
         """Retrieval Augmented Generation simulation step"""

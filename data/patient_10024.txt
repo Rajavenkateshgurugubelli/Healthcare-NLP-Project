@@ -1,0 +1,6 @@
+Patient Report ID: PT-10024
+Medical Specialty: Urology
+Case Description: Blood in urine - Transitional cell cancer of the bladder.
+
+--- Clinical Transcription ---
+CHIEF COMPLAINT:,

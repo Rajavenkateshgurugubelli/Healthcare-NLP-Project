@@ -1,0 +1,6 @@
+Patient Report ID: PT-10142
+Medical Specialty: Urology
+Case Description: Cystourethroscopy, bilateral retrograde pyelogram, and transurethral resection of bladder tumor of 1.5 cm in size.  Recurrent bladder tumor and history of bladder carcinoma.
+
+--- Clinical Transcription ---
+PREOPERATIVE DIAGNOSES:,1.  Recurrent bladder tumor.,2.  History of bladder carcinoma.,POSTOPERATIVE DIAGNOSIS:,

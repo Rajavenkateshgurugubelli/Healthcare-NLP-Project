@@ -62,12 +62,12 @@ Healthcare-NLP-Project/
 Track completion here. Update when a phase is done.
 
 - [x] Phase 0: Planning & Architecture (CONTEXT.md created)
-- [ ] Phase 1: Environment & Tooling (Standardize requirements and Docker configs)
-- [ ] Phase 2: RAG Pipeline & Data Ingestion (LangChain splitters, FAISS indexing)
-- [ ] Phase 3: Core NLP & Model Serving (BioBERT NER pipeline integration)
-- [ ] Phase 4: Backend API (FastAPI endpoints and error handling)
-- [ ] Phase 5: Frontend UI (Streamlit chat and NER visualizer)
-- [ ] Phase 6: Testing & QA (Pytest and E2E verification)
+- [x] Phase 1: Environment & Tooling (requirements.txt, Dockerfile, docker-compose.yml)
+- [x] Phase 2: RAG Pipeline & Data Ingestion (LangChain splitters, FAISS indexing in nlp_engine.py)
+- [x] Phase 3: Core NLP & Model Serving (BioBERT NER via d4data/biomedical-ner-all)
+- [x] Phase 4: Backend API (FastAPI /analyze + /query endpoints with error handling)
+- [x] Phase 5: Frontend UI (Streamlit with NER tab + RAG query tab)
+- [x] Phase 6: Testing & QA (Pytest suite with health, analyze, query tests)
 
 ---
 

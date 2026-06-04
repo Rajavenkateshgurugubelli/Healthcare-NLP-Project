@@ -1,37 +1,45 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
-# Virtual environments
-venv/
-env/
-ENV/
-env.bak/
-venv.bak/
-
-# Environment variables
+# Node / Frontend
+node_modules/
+dist/
+.angular/
+.next/
+out/
 .env
 
-# Data / Models (Do not commit patient data or large weights)
-*.h5
-*.pt
-*.bin
-/models/
-/data/patient_notes/
-*.json
-*.csv
+# Python
+venv/
+.venv/
+env/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+*.pyc
+*.pyo
+*.pyd
+chroma_db/
 
-# OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+# Java / Spring Boot
+target/
+.gradle/
+build/
+bin/
 
 # IDEs
 .idea/
 .vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
 *.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large ML data / model artifacts
+monitoring/reference_data.pkl
+model/model.pkl
+model/scaler.pkl
+threshold.txt
+data/creditcard.csv
